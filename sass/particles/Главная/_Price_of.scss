@@ -1,0 +1,147 @@
+.price_off,
+.new_products,
+.last_buyings {
+
+    .price_off_content,
+    .new_products_content,
+    .last_buyings_content {
+        padding: 80px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Rubik", sans-serif;
+
+        .price_off_all_products_title,
+        .new_products_all_products_title,
+        .last_buyings_all_products_title {
+            color: #606060;
+        }
+    }
+
+    .price_off_cards,
+    .new_products_cards,
+    .last_buyings_cards {
+        .card {
+            width: 272px;
+
+            .card_image {
+                .discount_percent {
+                    width: 56px;
+                    height: 32px;
+                    background-color: #FF6633;
+                    border-radius: 4px;
+
+                    .percent {
+                        text-align: center;
+                        color: #fff;
+                        font-family: "Rubik", sans-serif;
+                    }
+                }
+            }
+
+            .card_price_off_content {
+                .card_discount {
+                    .card_discount_percent_creditcard {
+                        font-weight: bold;
+                        font-family: "Rubik", sans-serif;
+                        font-size: 18px;
+
+
+                    }
+
+                    .card_discount_percent_cash {
+                        font-size: 16px;
+                        color: #606060;
+                    }
+
+                }
+
+                .card_price_way {
+                    .credit_card {
+                        color: #BFBFBF;
+                        font-size: 12px;
+                    }
+
+                    .cash {
+                        color: #BFBFBF;
+                        font-size: 12px;
+
+                    }
+                }
+
+
+                .star_rating {
+                    .checked {
+
+                        color: #FF6633;
+                    }
+                }
+
+                .card_button {
+                    width: 256px;
+                    height: 40px;
+                    border: #70C05B solid 1px;
+                    color: #70C05B;
+                    background-color: #fff;
+
+                }
+
+            }
+        }
+    }
+
+}
+
+.double_card_section {
+
+    .cards {
+        border: #606060 solid 1px;
+        width: 584px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        background-color: #FCD5BA;
+
+
+        // .card_left {//     width: 200px;
+        // }
+
+        .card_right {
+            // width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            display: block;
+            width: 206px;
+            height: 138px;
+        }
+
+        &:nth-child(2) {
+            background-image: url(/assets/images/special_Background.png);
+        }
+
+    }
+
+}
+
+.states {
+    font-family: "Rubik", sans-serif;
+
+    .states_title {
+        font-weight: bold;
+    }
+
+    .states_all_states_title {
+        color: #606060;
+    }
+
+    .states_cards {
+        .card {
+            width: 376px;
+            height: 420px;
+        }
+    }
+}

@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@font-face {
+  font-family: "font_Rubik";
+  src: url(../../assets/fonts/Rubik-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+header .top {
+  padding: 16px 116px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .top .top_search_and_category {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+header .top .top_search_and_category .catalog {
+  text-decoration: none;
+  background-color: #70C05B;
+  width: 140px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .top .top_search_and_category .catalog .catalog_text {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+}
+header .top .top_search_and_category .search {
+  width: 360px;
+  height: 40px;
+}
+header .top .top_product_boxes {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+header .top .top_product_boxes .product_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .top .user_account {
+  display: flex;
+  justify-self: start;
+  align-items: center;
+}
+header .top .user_account .user_name {
+  font-family: "Rubik", sans-serif;
+}
+header .category_drop_down {
+  display: none;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 116px;
+}
+header .category_drop_down .category_products .product {
+  line-height: 2.5;
+  font-family: "Rubik", sans-serif;
+}
+
+.advert {
+  padding: 0px 185px;
+  height: 202px;
+  width: 1440px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: url("/assets/images/advert_bgc.png");
+  background-color: #f5bde2;
+}
+.advert .advert_text {
+  font-family: "Rubik", sans-serif;
+  font-size: 48px;
+  color: #414141;
+}
+
+.price_off .price_off_content,
+.price_off .new_products_content,
+.price_off .last_buyings_content,
+.new_products .price_off_content,
+.new_products .new_products_content,
+.new_products .last_buyings_content,
+.last_buyings .price_off_content,
+.last_buyings .new_products_content,
+.last_buyings .last_buyings_content {
+  padding: 80px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+}
+.price_off .price_off_content .price_off_all_products_title,
+.price_off .price_off_content .new_products_all_products_title,
+.price_off .price_off_content .last_buyings_all_products_title,
+.price_off .new_products_content .price_off_all_products_title,
+.price_off .new_products_content .new_products_all_products_title,
+.price_off .new_products_content .last_buyings_all_products_title,
+.price_off .last_buyings_content .price_off_all_products_title,
+.price_off .last_buyings_content .new_products_all_products_title,
+.price_off .last_buyings_content .last_buyings_all_products_title,
+.new_products .price_off_content .price_off_all_products_title,
+.new_products .price_off_content .new_products_all_products_title,
+.new_products .price_off_content .last_buyings_all_products_title,
+.new_products .new_products_content .price_off_all_products_title,
+.new_products .new_products_content .new_products_all_products_title,
+.new_products .new_products_content .last_buyings_all_products_title,
+.new_products .last_buyings_content .price_off_all_products_title,
+.new_products .last_buyings_content .new_products_all_products_title,
+.new_products .last_buyings_content .last_buyings_all_products_title,
+.last_buyings .price_off_content .price_off_all_products_title,
+.last_buyings .price_off_content .new_products_all_products_title,
+.last_buyings .price_off_content .last_buyings_all_products_title,
+.last_buyings .new_products_content .price_off_all_products_title,
+.last_buyings .new_products_content .new_products_all_products_title,
+.last_buyings .new_products_content .last_buyings_all_products_title,
+.last_buyings .last_buyings_content .price_off_all_products_title,
+.last_buyings .last_buyings_content .new_products_all_products_title,
+.last_buyings .last_buyings_content .last_buyings_all_products_title {
+  color: #606060;
+}
+.price_off .price_off_cards .card,
+.price_off .new_products_cards .card,
+.price_off .last_buyings_cards .card,
+.new_products .price_off_cards .card,
+.new_products .new_products_cards .card,
+.new_products .last_buyings_cards .card,
+.last_buyings .price_off_cards .card,
+.last_buyings .new_products_cards .card,
+.last_buyings .last_buyings_cards .card {
+  width: 272px;
+}
+.price_off .price_off_cards .card .card_image .discount_percent,
+.price_off .new_products_cards .card .card_image .discount_percent,
+.price_off .last_buyings_cards .card .card_image .discount_percent,
+.new_products .price_off_cards .card .card_image .discount_percent,
+.new_products .new_products_cards .card .card_image .discount_percent,
+.new_products .last_buyings_cards .card .card_image .discount_percent,
+.last_buyings .price_off_cards .card .card_image .discount_percent,
+.last_buyings .new_products_cards .card .card_image .discount_percent,
+.last_buyings .last_buyings_cards .card .card_image .discount_percent {
+  width: 56px;
+  height: 32px;
+  background-color: #FF6633;
+  border-radius: 4px;
+}
+.price_off .price_off_cards .card .card_image .discount_percent .percent,
+.price_off .new_products_cards .card .card_image .discount_percent .percent,
+.price_off .last_buyings_cards .card .card_image .discount_percent .percent,
+.new_products .price_off_cards .card .card_image .discount_percent .percent,
+.new_products .new_products_cards .card .card_image .discount_percent .percent,
+.new_products .last_buyings_cards .card .card_image .discount_percent .percent,
+.last_buyings .price_off_cards .card .card_image .discount_percent .percent,
+.last_buyings .new_products_cards .card .card_image .discount_percent .percent,
+.last_buyings .last_buyings_cards .card .card_image .discount_percent .percent {
+  text-align: center;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+}
+.price_off .price_off_cards .card .card_price_off_content .card_discount .card_discount_percent_creditcard,
+.price_off .new_products_cards .card .card_price_off_content .card_discount .card_discount_percent_creditcard,
+.price_off .last_buyings_cards .card .card_price_off_content .card_discount .card_discount_percent_creditcard,
+.new_products .price_off_cards .card .card_price_off_content .card_discount .card_discount_percent_creditcard,
+.new_products .new_products_cards .card .card_price_off_content .card_discount .card_discount_percent_creditcard,
+.new_products .last_buyings_cards .card .card_price_off_content .card_discount .card_discount_percent_creditcard,
+.last_buyings .price_off_cards .card .card_price_off_content .card_discount .card_discount_percent_creditcard,
+.last_buyings .new_products_cards .card .card_price_off_content .card_discount .card_discount_percent_creditcard,
+.last_buyings .last_buyings_cards .card .card_price_off_content .card_discount .card_discount_percent_creditcard {
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+.price_off .price_off_cards .card .card_price_off_content .card_discount .card_discount_percent_cash,
+.price_off .new_products_cards .card .card_price_off_content .card_discount .card_discount_percent_cash,
+.price_off .last_buyings_cards .card .card_price_off_content .card_discount .card_discount_percent_cash,
+.new_products .price_off_cards .card .card_price_off_content .card_discount .card_discount_percent_cash,
+.new_products .new_products_cards .card .card_price_off_content .card_discount .card_discount_percent_cash,
+.new_products .last_buyings_cards .card .card_price_off_content .card_discount .card_discount_percent_cash,
+.last_buyings .price_off_cards .card .card_price_off_content .card_discount .card_discount_percent_cash,
+.last_buyings .new_products_cards .card .card_price_off_content .card_discount .card_discount_percent_cash,
+.last_buyings .last_buyings_cards .card .card_price_off_content .card_discount .card_discount_percent_cash {
+  font-size: 16px;
+  color: #606060;
+}
+.price_off .price_off_cards .card .card_price_off_content .card_price_way .credit_card,
+.price_off .new_products_cards .card .card_price_off_content .card_price_way .credit_card,
+.price_off .last_buyings_cards .card .card_price_off_content .card_price_way .credit_card,
+.new_products .price_off_cards .card .card_price_off_content .card_price_way .credit_card,
+.new_products .new_products_cards .card .card_price_off_content .card_price_way .credit_card,
+.new_products .last_buyings_cards .card .card_price_off_content .card_price_way .credit_card,
+.last_buyings .price_off_cards .card .card_price_off_content .card_price_way .credit_card,
+.last_buyings .new_products_cards .card .card_price_off_content .card_price_way .credit_card,
+.last_buyings .last_buyings_cards .card .card_price_off_content .card_price_way .credit_card {
+  color: #BFBFBF;
+  font-size: 12px;
+}
+.price_off .price_off_cards .card .card_price_off_content .card_price_way .cash,
+.price_off .new_products_cards .card .card_price_off_content .card_price_way .cash,
+.price_off .last_buyings_cards .card .card_price_off_content .card_price_way .cash,
+.new_products .price_off_cards .card .card_price_off_content .card_price_way .cash,
+.new_products .new_products_cards .card .card_price_off_content .card_price_way .cash,
+.new_products .last_buyings_cards .card .card_price_off_content .card_price_way .cash,
+.last_buyings .price_off_cards .card .card_price_off_content .card_price_way .cash,
+.last_buyings .new_products_cards .card .card_price_off_content .card_price_way .cash,
+.last_buyings .last_buyings_cards .card .card_price_off_content .card_price_way .cash {
+  color: #BFBFBF;
+  font-size: 12px;
+}
+.price_off .price_off_cards .card .card_price_off_content .star_rating .checked,
+.price_off .new_products_cards .card .card_price_off_content .star_rating .checked,
+.price_off .last_buyings_cards .card .card_price_off_content .star_rating .checked,
+.new_products .price_off_cards .card .card_price_off_content .star_rating .checked,
+.new_products .new_products_cards .card .card_price_off_content .star_rating .checked,
+.new_products .last_buyings_cards .card .card_price_off_content .star_rating .checked,
+.last_buyings .price_off_cards .card .card_price_off_content .star_rating .checked,
+.last_buyings .new_products_cards .card .card_price_off_content .star_rating .checked,
+.last_buyings .last_buyings_cards .card .card_price_off_content .star_rating .checked {
+  color: #FF6633;
+}
+.price_off .price_off_cards .card .card_price_off_content .card_button,
+.price_off .new_products_cards .card .card_price_off_content .card_button,
+.price_off .last_buyings_cards .card .card_price_off_content .card_button,
+.new_products .price_off_cards .card .card_price_off_content .card_button,
+.new_products .new_products_cards .card .card_price_off_content .card_button,
+.new_products .last_buyings_cards .card .card_price_off_content .card_button,
+.last_buyings .price_off_cards .card .card_price_off_content .card_button,
+.last_buyings .new_products_cards .card .card_price_off_content .card_button,
+.last_buyings .last_buyings_cards .card .card_price_off_content .card_button {
+  width: 256px;
+  height: 40px;
+  border: #70C05B solid 1px;
+  color: #70C05B;
+  background-color: #fff;
+}
+
+.double_card_section .cards {
+  border: #606060 solid 1px;
+  width: 584px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FCD5BA;
+}
+.double_card_section .cards .card_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.double_card_section .cards img {
+  display: block;
+  width: 206px;
+  height: 138px;
+}
+.double_card_section .cards:nth-child(2) {
+  background-image: url(/assets/images/special_Background.png);
+}
+
+.states {
+  font-family: "Rubik", sans-serif;
+}
+.states .states_title {
+  font-weight: bold;
+}
+.states .states_all_states_title {
+  color: #606060;
+}
+.states .states_cards .card {
+  width: 376px;
+  height: 420px;
+}
+
+.footer {
+  font-family: "Rubik", sans-serif;
+  background-color: #F9F4E2;
+  background-image: url(/assets/images/footer_bg_image.png);
+}
+.footer .footer_navbar .navbar_list {
+  list-style: none;
+  font-size: 12px;
+  color: #414141;
+}/*# sourceMappingURL=global.css.map */

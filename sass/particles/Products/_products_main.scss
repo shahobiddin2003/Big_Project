@@ -1,0 +1,72 @@
+@import "/sass/particles/Products/header";
+@import "/sass/particles/Products/footer";
+
+.products_cards {
+    .card {
+        width: 272px;
+
+        .card_image {
+            .discount_percent {
+                width: 56px;
+                height: 32px;
+                background-color: #FF6633;
+                border-radius: 4px;
+
+                .percent {
+                    text-align: center;
+                    color: #fff;
+                    font-family: "Rubik", sans-serif;
+                }
+            }
+        }
+
+        .card_price_off_content {
+            .card_discount {
+                .card_discount_percent_creditcard {
+                    font-weight: bold;
+                    font-family: "Rubik", sans-serif;
+                    font-size: 18px;
+
+
+                }
+
+                .card_discount_percent_cash {
+                    font-size: 16px;
+                    color: #606060;
+                }
+
+            }
+
+            .card_price_way {
+                .credit_card {
+                    color: #BFBFBF;
+                    font-size: 12px;
+                }
+
+                .cash {
+                    color: #BFBFBF;
+                    font-size: 12px;
+
+                }
+            }
+
+
+            .star_rating {
+                .checked {
+
+                    color: #FF6633;
+                }
+            }
+
+            .card_button {
+                width: 256px;
+                height: 40px;
+                border: #70C05B solid 1px;
+                color: #70C05B;
+                background-color: #fff;
+
+            }
+
+        }
+    }
+}

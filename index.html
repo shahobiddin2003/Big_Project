@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="3" /> -->
+    <link rel="stylesheet" href="sass/global.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Главная</title>
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <div class="top_logo">
+          <img src="./assets/images/logo (1).png" alt="" />
+        </div>
+        <div class="top_search_and_category">
+          <div id="category_button " onclick="disappear()" class="catalog">
+            <img src="./assets/images/menu_hamburger.png" alt="" />
+            <p class="catalog_text m-1">Каталог</p>
+          </div>
+          <input type="search" class="search" placeholder="Найти товар " />
+        </div>
+        <div class="top_product_boxes">
+          <div class="product_box box1">
+            <img
+              src="./assets/images/Heart.png"
+              alt=""
+              class="product_box_img"
+            />
+            <p class="product_box_text">Избранное</p>
+          </div>
+          <div class="product_box box2">
+            <img src="./assets/images/box.png" alt="" class="product_box_img" />
+            <p class="product_box_text">Продукты</p>
+          </div>
+          <div class="product_box box3">
+            <img
+              src="./assets/images/shopping-cart.png"
+              alt=""
+              class="product_box_img"
+            />
+            <p class="product_box_text">Корзина</p>
+          </div>
+        </div>
+        <div class="user_account">
+          <img src="./assets/images/Man_pic.png" alt="" class="user_image" />
+          <p class="user_name">Алексей</p>
+        </div>
+      </div>
+      <div class="category_drop_down" id="category_list">
+        <div class="category_products">
+          <p class="product">Молоко, сыр, яйцо</p>
+          <p class="product">Хлеб</p>
+          <p class="product">Фрукты и овощи</p>
+          <p class="product">Замороженные продукты</p>
+        </div>
+        <div class="category_products">
+          <p class="product">Напитки</p>
+          <p class="product">Кондитерские изделия</p>
+          <p class="product">Чай, кофе</p>
+        </div>
+        <div class="category_products">
+          <p class="product">Бакалея</p>
+          <p class="product">Здоровое питание</p>
+          <p class="product">Зоотовары</p>
+        </div>
+        <div class="category_products">
+          <p class="product">Непродовольственные товары</p>
+          <p class="product">Детское питание</p>
+          <p class="product">Мясо, птица, колбаса</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="advert">
+        <img src="./assets/images/advert_img.png" alt="" class="advert_img" />
+        <h2 class="advert_text">Доставка бесплатно от 1000 ₽</h2>
+      </div>
+      <section class="Products container">
+        <div class="price_off">
+          <div class="price_off_content">
+            <h2 class="price_off_title">Акции</h2>
+            <p class="price_off_all_products_title">Все продукты ></p>
+          </div>
+          <div
+            class="price_off_cards d-flex justify-content-between flex-wrap"
+          ></div>
+        </div>
+        <!-- -------------------- -->
+        <div class="new_products">
+          <div class="new_products_content">
+            <h2 class="new_products_title">Новинки</h2>
+            <p class="new_products_all_products_title">Все продукты ></p>
+          </div>
+          <div
+            class="new_products_cards d-flex justify-content-between flex-wrap"
+          ></div>
+        </div>
+        <!-- ------------------ -->
+        <div class="last_buyings">
+          <div class="last_buyings_content">
+            <h2 class="last_buyings_title">Покупали раньше</h2>
+            <p class="last_buyings_all_products_title">Все продукты ></p>
+          </div>
+          <div
+            class="last_buyings_cards d-flex justify-content-between flex-wrap"
+          ></div>
+        </div>
+        <h2 class="special_apps m-5">Специальные предложения</h2>
+        <div class="double_card_section d-flex justify-content-between">
+          <div class="cards rounded-2">
+            <div class="card_left p-4">
+              <p class="card_left_text">
+                Оформите карту <br />
+                «Северяночка»
+              </p>
+              <p class="card_left_content">
+                И получайте бонусы при покупке <br />
+                в магазинах и на сайте
+              </p>
+            </div>
+            <div class="card_right">
+              <img src="./assets/images/happy_card.png" alt="" />
+            </div>
+          </div>
+          <div class="cards rounded-2">
+            <div class="card_left p-4">
+              <p class="card_left_text">
+                Оформите карту <br />
+                «Северяночка»
+              </p>
+              <p class="card_left_content">
+                И получайте бонусы при покупке <br />
+                в магазинах и на сайте
+              </p>
+            </div>
+            <div class="card_right"></div>
+          </div>
+        </div>
+        <div class="locations mt-5 mb-5">
+          <h2 class="locations_title">Наши магазины</h2>
+          <div class="locations_buttons">
+            <button
+              onclick="Btn1()"
+              class="button border-0 btn btn-outline-success"
+            >
+              п.Щельяюр
+            </button>
+            <button
+              onclick="Btn2()"
+              class="button border-0 btn btn-outline-success"
+            >
+              д.Вертеп
+            </button>
+            <button
+              onclick="Btn3()"
+              class="button border-0 btn btn-outline-success"
+            >
+              с.Краснобор
+            </button>
+            <button
+              onclick="Btn4()"
+              class="button border-0 btn btn-outline-success"
+            >
+              д.Диюр
+            </button>
+          </div>
+          <div class="geolocations">
+            <div class="first_location">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2414.9525811573544!2d69.24338726473894!3d41.32500702892463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bfaedfe3e1d%3A0x23ac4a5a705b84ab!2zTmFqb3QgVGHigJlsaW0!5e1!3m2!1suz!2s!4v1692972204093!5m2!1suz!2s"
+                width="1208"
+                height="354"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="states">
+          <div class="states_content mb-5 d-flex justify-content-between">
+            <h2 class="states_title">Статьи</h2>
+            <p class="states_all_states_title">Все статьи ></p>
+          </div>
+          <div class="states_cards d-flex justify-content-between f-wrap">
+            <div class="card p-1 d-flex flex-column">
+              <img src="/assets/images/mask_warn.png" alt="" />
+              <div class="card_content">
+                <p class="card_date text-body-secondary">05.03.2021</p>
+                <p class="card_title fs-6 fw-bolder">
+                  Режим использования масок и <br />
+                  перчаток на территории магазинов
+                </p>
+                <p class="card_text">
+                  Подробная информация о режимах <br />
+                  использования масок и перчаток на <br />
+                  территории магазинов "ЛЕНТА". Информация <br />
+                  обновляется каждый будний день.
+                </p>
+
+                <button class="card_button btn btn-outline-success">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+            <!--  -->
+            <div class="card p-1">
+              <img src="/assets/images/Spring.png" alt="" />
+              <div class="card_content">
+                <p class="card_date text-body-secondary">05.03.2021</p>
+                <p class="card_title fs-6 fw-bolder">
+                  Весеннее настроение для каждой
+                </p>
+                <p class="card_text">
+                  8 Марта – это не просто Международный <br />
+                  женский день, это ещё день тюльпанов,<br />
+                  приятных сюрпризов и праздничных тёплых <br />
+                  пожеланий.
+                </p>
+
+                <button class="card_button btn btn-outline-success">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+            <!--  -->
+            <div class="card p-1">
+              <img src="/assets/images/food.png" alt="" />
+              <div class="card_content">
+                <p class="card_date text-body-secondary">05.03.2021</p>
+                <p class="card_title fs-6 fw-bolder">
+                  ЗОЖ или ФАСТФУД. А вы на чьей <br />
+                  стороне? Голосуем!
+                </p>
+                <p class="card_text">
+                  Голосуйте за любимые категории, выбирайте <br />
+                  категорию-победителя в мобильном <br />
+                  приложении и получайте кешбэк 10% <br />
+                  баллами в апреле!
+                </p>
+
+                <button class="card_button btn btn-outline-success">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="footer d-flex justify-content-between align-items-center p-4 mt-4"
+    >
+      <img
+        src="./assets/images/logo_for_footer.png"
+        alt=""
+        class="footer_logo"
+      />
+      <nav class="footer_navbar">
+        <ul class="navbar_list d-flex justify-content-between">
+          <li class="navbar_item m-3">О компании</li>
+          <li class="navbar_item m-3">Контакты</li>
+          <li class="navbar_item m-3">Вакансии</li>
+          <li class="navbar_item m-3">Статьи</li>
+          <li class="navbar_item m-3">
+            Политика обработки персональных данных
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="footer_sites d-flex justify-content-between align-items-center"
+      >
+        <img src="./assets/images/instagram.png" alt="" class="site m-3" />
+        <img src="./assets/images/VK.png" alt="" class="site m-3" />
+        <img src="./assets/images/facebook.png" alt="" class="site m-3" />
+        <img src="./assets/images/OK.png" alt="" class="site m-3" />
+      </div>
+      <div class="contacts">
+        <div class="phone_num d-flex justify-content-evenly align-items-center">
+          <img src="./assets/images/phone_icon.png" alt="" class="phone_icon" />
+          <p class="phone_number m-3">8 800 777 33 33</p>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/products-data.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

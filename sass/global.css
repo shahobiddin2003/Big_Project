@@ -66,6 +66,10 @@ header .category_drop_down {
   justify-content: space-between;
   align-items: flex-start;
   padding: 16px 116px;
+  position: absolute;
+  background: #ffffff;
+  z-index: 2;
+  width: 100%;
 }
 header .category_drop_down .category_products .product {
   line-height: 2.5;

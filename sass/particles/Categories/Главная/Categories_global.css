@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+header .top {
+  padding: 16px 116px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .top .top_search_and_category {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+header .top .top_search_and_category .catalog {
+  text-decoration: none;
+  background-color: #70C05B;
+  width: 140px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .top .top_search_and_category .catalog .catalog_text {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+}
+header .top .top_search_and_category .search {
+  width: 360px;
+  height: 40px;
+}
+header .top .top_product_boxes {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+header .top .top_product_boxes .product_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .top .user_account {
+  display: flex;
+  justify-self: start;
+  align-items: center;
+}
+header .top .user_account .user_name {
+  font-family: "Rubik", sans-serif;
+}
+header .category_drop_down {
+  display: none;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 116px;
+  position: absolute;
+  background: #ffffff;
+  z-index: 2;
+  width: 100%;
+}
+header .category_drop_down .category_products .product {
+  line-height: 2.5;
+  font-family: "Rubik", sans-serif;
+}
+
+.advert {
+  padding: 0px 185px;
+  height: 202px;
+  width: 1440px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: url("/assets/images/advert_bgc.png");
+  background-color: #f5bde2;
+}
+.advert .advert_text {
+  font-family: "Rubik", sans-serif;
+  font-size: 48px;
+  color: #414141;
+}
+
+.footer {
+  font-family: "Rubik", sans-serif;
+  background-color: #F9F4E2;
+  background-image: url(/assets/images/footer_bg_image.png);
+}
+.footer .footer_navbar .navbar_list {
+  list-style: none;
+  font-size: 12px;
+  color: #414141;
+}/*# sourceMappingURL=Categories_global.css.map */

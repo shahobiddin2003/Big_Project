@@ -8,6 +8,7 @@
 header {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
+
     .top {
         padding: 16px 116px;
         display: flex;
@@ -74,13 +75,19 @@ header {
         justify-content: space-between;
         align-items: flex-start;
         padding: 16px 116px;
+        position: absolute;
+        background: #ffffff;
+        z-index: 2;
+        width: 100%;
+
 
 
         .category_products {
+
+
             .product {
                 line-height: 2.5;
                 font-family: 'Rubik', sans-serif;
-
             }
         }
     }

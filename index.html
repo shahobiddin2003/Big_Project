@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta http-equiv="refresh" content="3" /> -->
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="sass/global.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -20,9 +25,11 @@
   <body>
     <header>
       <div class="top">
-        <div class="top_logo">
-          <img src="./assets/images/logo (1).png" alt="" />
-        </div>
+        <a href="#">
+          <div class="top_logo">
+            <img src="./assets/images/logo (1).png" alt="" />
+          </div>
+        </a>
         <div class="top_search_and_category">
           <div id="category_button " onclick="disappear()" class="catalog">
             <img src="./assets/images/menu_hamburger.png" alt="" />
@@ -39,7 +46,7 @@
             />
             <p class="product_box_text">Избранное</p>
           </div>
-          <div class="product_box box2">
+          <div class="product_box box2" onclick="toAllProducts()">
             <img src="./assets/images/box.png" alt="" class="product_box_img" />
             <p class="product_box_text">Продукты</p>
           </div>
@@ -90,7 +97,9 @@
         <div class="price_off">
           <div class="price_off_content">
             <h2 class="price_off_title">Акции</h2>
-            <p class="price_off_all_products_title">Все продукты ></p>
+            <p class="price_off_all_products_title" onclick="toAllProducts()">
+              Все продукты >
+            </p>
           </div>
           <div
             class="price_off_cards d-flex justify-content-between flex-wrap"

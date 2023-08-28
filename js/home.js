@@ -28,3 +28,11 @@ let Btn3 = () => {
 let Btn4 = () => {
   geolocations.innerHTML = fourth_location;
 };
+
+let toCategories = function () {
+  window.location = "./categories.html";
+};
+
+let toAllProducts = function () {
+  window.location = "./products.html";
+};

@@ -30,3 +30,39 @@ const categories = [
     image: "https://picsum.photos/200/300/?category31",
   },
 ];
+
+let gridClasses = [
+  "one",
+  "two",
+  "three",
+  "four",
+  "five",
+  "six",
+  "seven",
+  "eight",
+  "nine",
+  "ten",
+];
+
+let categoriesBox = document.querySelector(".categories_grid");
+
+let showCategories = categories.map((el) => {
+  return `<div
+  class="grid_items border"
+  style="background: url(${el.image});
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  "
+>
+  <p class="grid_items_text">${el.name}</p>
+</div>`;
+});
+
+let addClasses = showCategories;
+
+categoriesBox.innerHTML = showCategories;
+
+for (i in categories) {
+  categoriesBox.children[i].classList.add(gridClasses[i]);
+}

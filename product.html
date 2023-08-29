@@ -18,13 +18,28 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="/sass/particles/category/Category_global.css"
-    />
+    <link rel="stylesheet" href="/sass/particles/category/product_global.css" />
     <title>Product</title>
   </head>
   <body>
+    <div class="user_modal" id="user_modal"></div>
+    <div class="modal_box position-relative" id="user_modal">
+      <button class="cancel position-absolute top-0 end-0 border border-0 p-2">
+        &#128473;
+      </button>
+      <h4 class="box_title">Вход</h4>
+      <div class="number_box">
+        <p class="num_text">Телефон</p>
+        <input type="number" name="" class="number" id="" />
+      </div>
+      <button class="access_button btn btn-outline-danger">Вход</button>
+      <div
+        class="registration d-flex justify-content-between align-items-center gap-3"
+      >
+        <button class="reg_btn btn btn-outline-success">Регистрация</button>
+        <p class="password_forgot text-center m-0">Забыли пароль?</p>
+      </div>
+    </div>
     <header>
       <div class="top">
         <div class="top_logo">
@@ -88,7 +103,23 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="product_pagination d-flex container">
+        <p class="pages p-4">Главная</p>
+        <p class="pages p-4 pages_arrow">&#5171;</p>
+        <p class="pages p-4">Каталог</p>
+        <p class="pages p-4 pages_arrow">&#5171;</p>
+        <p class="pages p-4">AAAAAAAAAAA</p>
+        <p class="pages p-4 pages_arrow">&#5171;</p>
+        <p class="pages p-4">AAAAAAAA</p>
+      </div>
+      <section class="single_product_show">
+        <h2 class="product_name">
+          Масло ПРОСТОКВАШИНО сливочное в/с 82% фольга без змж, Россия, 180 г
+        </h2>
+        <div class="ratings"></div>
+      </section>
+    </main>
     <footer
       class="footer d-flex justify-content-between align-items-center p-4 mt-4"
     >
@@ -128,5 +159,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="/js/main.js"></script>
   </body>
 </html>

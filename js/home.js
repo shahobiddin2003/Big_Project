@@ -36,3 +36,7 @@ let toCategories = function () {
 let toAllProducts = function () {
   window.location = "./products.html";
 };
+
+let showModal = document.querySelector("#user_modal");
+
+console.log(showModal);

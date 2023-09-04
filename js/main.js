@@ -1,42 +1,22 @@
-let showModal = (ev) => {
-  ev.preventDefault();
-  let modal = document.querySelector(".modal_box");
-  modal.classList.remove("off");
-  modal.classList.add("on");
+let modalWrapper = document.querySelector(".user_modal");
+let modalBox = document.querySelector(".modal_box");
+let modalCancelBtnX = document.querySelector(".cancel");
+let userLogIn = document.querySelector(".user_account");
+
+let openModal = () => {
+  modalWrapper.style.display = "block";
+  modalBox.style.display = "flex";
 };
 
-let showOverLay = (ev) => {
-  ev.preventDefault();
-  let overlay = document.querySelector(".user_modal");
-  overlay.classList.remove("hide");
-  overlay.classList.add("show");
-
-  showModal(ev);
+let closeModal = () => {
+  modalWrapper.style.display = "none";
+  modalBox.style.display = "none";
 };
 
-let hideModal = (ev) => {
-  ev.preventDefault();
-  let modal = document.querySelector(".modal_box");
-  modal.classList.remove("on");
-  modal.classList.add("off");
-};
+booleanForWrapper = true;
 
-let hideOverlay = (ev) => {
-  ev.preventDefault();
-  ev.stopPropagation();
-  let overlay = document.querySelector(".user_modal");
-  overlay.classList.remove("show");
-  overlay.classList.add("hide");
+userLogIn.addEventListener("click", openModal);
 
-  hideModal(ev);
-};
+modalWrapper.addEventListener("click", closeModal);
 
-const init = (ev) => {
-  document
-    .querySelector(".user_account")
-    .addEventListener("click", showOverLay);
-
-  document.querySelector(".cancel").addEventListener("click", hideOverlay);
-};
-
-document.addEventListener("DOMContentLoaded", init);
+modalCancelBtnX.addEventListener("click", closeModal);

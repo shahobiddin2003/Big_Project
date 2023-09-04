@@ -23,6 +23,24 @@
     <title>Главная</title>
   </head>
   <body>
+    <div class="user_modal" id="user_modal"></div>
+    <div class="modal_box position-relative" id="user_modal">
+      <button class="cancel position-absolute top-0 end-0 border border-0 p-2">
+        &#128473;
+      </button>
+      <h4 class="box_title">Вход</h4>
+      <div class="number_box">
+        <p class="num_text">Телефон</p>
+        <input type="number" name="" class="number" id="" />
+      </div>
+      <button class="access_button btn btn-outline-danger">Вход</button>
+      <div
+        class="registration d-flex justify-content-between align-items-center gap-3"
+      >
+        <button class="reg_btn btn btn-outline-success">Регистрация</button>
+        <p class="password_forgot text-center m-0">Забыли пароль?</p>
+      </div>
+    </div>
     <header>
       <div class="top">
         <a href="#">
@@ -306,6 +324,8 @@
     <script type="text/javascript" src="https://livejs.com/live.js"></script>
     <script src="./js/home.js"></script>
     <script src="./js/products-data.js"></script>
+    <script src="./js/main.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

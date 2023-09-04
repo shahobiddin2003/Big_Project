@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="/sass/particles/category/product_global.css" />
+    <link rel="stylesheet" href="/sass/particles/product/product_global.css" />
     <title>Product</title>
   </head>
   <body>
@@ -113,13 +113,119 @@
         <p class="pages p-4 pages_arrow">&#5171;</p>
         <p class="pages p-4">AAAAAAAA</p>
       </div>
-      <section class="single_product_show">
-        <h2 class="product_name">
+      <section class="single_product_show container p-4">
+        <h2 class="product_name pb-5">
           Масло ПРОСТОКВАШИНО сливочное в/с 82% фольга без змж, Россия, 180 г
         </h2>
-        <div class="ratings"></div>
+
+        <div
+          class="ratings d-flex align-items-center justify-content-start gap-5"
+        >
+          <p class="series_number m-0">арт. 371431</p>
+          <div
+            class="star_rating d-flex align-items-center justify-content-center"
+          >
+            <span class="star_rating fa fa-star checked"></span>
+            <span class="star_rating fa fa-star checked"></span>
+            <span class="star_rating fa fa-star checked"></span>
+            <span class="star_rating fa fa-star checked"></span>
+            <span class="star_rating fa fa-star"></span>
+            <p class="calls m-0 ms-2">3 отзыва</p>
+          </div>
+          <div class="share d-flex align-items-center justify-content-center">
+            <img
+              src="/assets/images/Share_icon.png"
+              alt=""
+              class="share_icon"
+            />
+            <p class="share_text m-0">Поделиться</p>
+          </div>
+          <div
+            class="favourites d-flex align-items-center justify-content-center"
+          >
+            <img src="/assets/images/Heart.png" alt="" class="favourite_img" />
+            <p class="favourite_text m-0">В избраное</p>
+          </div>
+        </div>
+        <div class="single_product_details d-flex py-5">
+          <div class="product_images grid_box">
+            <div class="grid_items one">
+              <img
+                src="/assets/images/products/1.png"
+                alt=""
+                class="grid_image"
+              />
+            </div>
+            <div class="grid_items two">
+              <img
+                src="/assets/images/products/1.png"
+                alt=""
+                class="grid_image"
+              />
+            </div>
+            <div class="grid_items three">
+              <img
+                src="/assets/images/products/1.png"
+                alt=""
+                class="grid_image"
+              />
+            </div>
+            <div class="grid_items four">
+              <img
+                src="/assets/images/products/1.png"
+                alt=""
+                class="grid_image"
+              />
+            </div>
+            <div class="grid_items five position-relative">
+              <img
+                src="/assets/images/products/1.png"
+                alt=""
+                class="grid_image"
+              />
+              <p
+                class="percent position-absolute rounded-2 fw-bold top-0 end-0"
+              >
+                50%
+              </p>
+            </div>
+          </div>
+          <div class="product_info w-100 p-5">
+            <div class="price d-flex justify-content-between">
+              <div class="normal_price">
+                <p class="normal_price_num">192,69 P</p>
+                <p class="normal_price_text">Обычная цена</p>
+              </div>
+              <div class="card_with_price">
+                <p class="normal_price_num">108,99 P</p>
+                <p class="normal_price_text">С картой Северяночки ⓘ</p>
+              </div>
+            </div>
+            <div
+              class="cart_btn_wrapper w-100 p-5 d-flex align-items-center justify-content-center"
+            >
+              <button class="to_cart_btn rounded-2">🛒 В корзину</button>
+            </div>
+            <div class="infos gap-5 p-5">
+              <div class="info_wrapper d-flex w-100">
+                <p class="info_keys fw-bold w-50">Бренд</p>
+                <p class="info_value">ПРОСТОКВАШИНО</p>
+              </div>
+              <div class="info_wrapper d-flex w-100">
+                <p class="info_keys fw-bold w-50">Страна производителя</p>
+                <p class="info_value">Россия</p>
+              </div>
+              <div class="info_wrapper d-flex w-100">
+                <p class="info_keys fw-bold w-50">Упаковка</p>
+                <p class="info_value">180 г</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+
+    <!-- ----------------------------------------------- -->
     <footer
       class="footer d-flex justify-content-between align-items-center p-4 mt-4"
     >
